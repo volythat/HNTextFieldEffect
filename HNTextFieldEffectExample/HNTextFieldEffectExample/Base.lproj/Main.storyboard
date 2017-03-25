@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HNTextFieldEffectExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NNc-Ll-8Cx" customClass="HNTextFieldEffect" customModule="HNTextFieldEffectExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="63" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="98U-UI-xU3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-rS-4Ns">
+                                <rect key="frame" x="164" y="191" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z1A-Fp-YvF"/>
+                                    <constraint firstAttribute="width" constant="46" id="wet-7E-J4H"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="taoclickroi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zli-Ld-NZh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ESm-ea-Y1B" customClass="HNTextFieldEffect" customModule="HNTextFieldEffectExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="118" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X1a-5S-yTO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ESm-ea-Y1B" firstAttribute="leading" secondItem="NNc-Ll-8Cx" secondAttribute="leading" id="BwM-R3-TXL"/>
+                            <constraint firstItem="NNc-Ll-8Cx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="QrG-q2-Peq"/>
+                            <constraint firstItem="NNc-Ll-8Cx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="TNu-3K-r5l"/>
+                            <constraint firstItem="ESm-ea-Y1B" firstAttribute="trailing" secondItem="NNc-Ll-8Cx" secondAttribute="trailing" id="ccR-7g-b4x"/>
+                            <constraint firstItem="ywa-rS-4Ns" firstAttribute="top" secondItem="ESm-ea-Y1B" secondAttribute="bottom" constant="33" id="eQ3-g7-fbx"/>
+                            <constraint firstAttribute="trailing" secondItem="NNc-Ll-8Cx" secondAttribute="trailing" constant="16" id="i07-ed-igp"/>
+                            <constraint firstItem="ESm-ea-Y1B" firstAttribute="top" secondItem="NNc-Ll-8Cx" secondAttribute="bottom" constant="15" id="jWs-xl-cVn"/>
+                            <constraint firstItem="ywa-rS-4Ns" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4n-7a-5LD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfFirst" destination="NNc-Ll-8Cx" id="SeS-mQ-tmH"/>
+                        <outlet property="tfLast" destination="ESm-ea-Y1B" id="Jhm-r7-GOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
